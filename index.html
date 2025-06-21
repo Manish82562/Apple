@@ -3,11 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOMs Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            color: #222;
+        }
+        header {
+            background: #4f8cff;
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(79,140,255,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd166;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(79,140,255,0.08);
+            padding: 2.5rem 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            color: #4f8cff;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .feature-card {
+            background: #f7faff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.06);
+            padding: 1.5rem 1.2rem;
+            flex: 1 1 250px;
+            max-width: 270px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-6px) scale(1.03);
+        }
+        .feature-card h3 {
+            color: #4f8cff;
+            margin-bottom: 0.7rem;
+        }
+        .feature-card p {
+            color: #444;
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            color: #888;
+            font-size: 1rem;
+            background: none;
+        }
+        @media (max-width: 700px) {
+            .features {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .container {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div>Manish</div>
-    <p>djkhedjkvdn.vejk</p>
-    <h1>ksdvfk.fedv</h1>
+    <header>
+        <h1>DOMs Home Page</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <h2>Welcome to DOMs!</h2>
+            <p>
+                Discover the power of the Document Object Model.<br>
+                Learn, experiment, and master DOM manipulation with interactive examples and resources.
+            </p>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h3>Interactive Tutorials</h3>
+                <p>Step-by-step guides to help you understand and use the DOM effectively in your projects.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Live Code Editor</h3>
+                <p>Experiment with DOM code in real-time and see instant results right in your browser.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Resource Library</h3>
+                <p>Access a curated collection of articles, videos, and documentation about the DOM.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 DOMs. Crafted with ❤️ for web enthusiasts.
+    </footer>
 </body>
-</html>
